@@ -1,27 +1,12 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-
-	<title>Timeline.js - easily creates timeline slider</title>
-
-	<!-- Timeline Style -->
+<head>	
+	<title>Hackathon SpaceApps 2020</title>	
 	<link rel="stylesheet" href="src/css/timeline.css">
-	<link rel="stylesheet" href="css/prettify.css">
-
-	<!-- Demo style -->
+	<link rel="stylesheet" href="css/prettify.css">	
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/demo.css">
-
-	<meta name="description" content="jQuery timeline plugin, easily creates a timeline." />
-	<meta name="keywords"
-		content="timelinejs, timeline, timeline slider, milestone, topic:chronology, jquery timeline plugin" />
+	<link rel="stylesheet" href="css/demo.css">	
 </head>
-
 <body>
 	<main class="main-wrapper container">		
 		<section class="section-list">
@@ -33,14 +18,27 @@
 									<img src="img/astronaut/1.jpg" alt="">
 								</div>
 								<div class="timeline-detail">
-									<ul class="timeline-detail-list">
-										<li>P.Sono</li>
-										<li>Cochilo?</li>
-										<li>Medicamento?</li>
-										<li>Contra-Medidas?</li>
-										<li>Alimentação?</li>
-										<li>Exercício Fis.</li>
-									</ul>
+									<p>Astronaut:Drew Gaffney</p> 
+									<table>
+										<tr>
+											<td>Sleep Period:</td><td>8</td>
+										</tr>
+										<tr>
+											<td>Realiza cochilos adicionais?</td><td>Não</td>
+										</tr>
+										<tr>
+											<td>Faz uso de medicamentos?</td><td><a href="#" onclick="showInfo('med')">Details</a></td>
+										</tr>
+										<tr>
+											<td>Contramedidas</td><td><a href="#" onclick="showInfo('con')">Details</a></td>
+										</tr>
+										<tr>
+											<td>Alimentação</td><td><a href="#" onclick="showInfo('food')">Details</a></td>
+										</tr>
+										<tr>
+											<td>Exercício Fisico</td><td><a href="#" onclick="showInfo('fit')">Details</a></td>
+										</tr>
+									</table>									
 								</div>
 							</div>
 							<div data-time="08">
@@ -48,20 +46,36 @@
 									<img src="img/astronaut/2.jpg" alt="">
 								</div>
 								<div class="timeline-detail">
-									<ul class="timeline-detail-list">
-										<li>P.Sono</li>
-										<li>Cochilo?</li>
-										<li>Medicamento?</li>
-										<li>Contra-Medidas?</li>
-										<li>Alimentação?</li>
-										<li>Exercício Fis.</li>
-									</ul>
+									<p>Astronaut:Gutierrez, Sidney M</p>
+									<table>
+										<tr>
+											<td>Sleep Period:</td><td>8</td>
+										</tr>
+										<tr>
+											<td>Realiza cochilos adicionais?</td><td>Não</td>
+										</tr>
+										<tr>
+											<td>Faz uso de medicamentos?</td><td><a href="#" onclick="showInfoTwo('med')">Details</a></td>
+										</tr>
+										<tr>
+											<td>Contramedidas</td><td><a href="#" onclick="showInfoTwo('con')">Details</a></td>
+										</tr>
+										<tr>
+											<td>Alimentação</td><td><a href="#" onclick="showInfoTwo('food')">Details</a></td>
+										</tr>
+										<tr>
+											<td>Exercício Fisico</td><td><a href="#" onclick="showInfoTwo('fit')">Details</a></td>
+										</tr>
+									</table>									
 								</div>
 							</div>							
 						</div>
 					</div><!-- /.timeline-container -->
 				</div><!-- /.section-list-box -->				
 			</div>
+		</section>
+		<section class="section-list">
+			<p id="info">-</p>
 		</section>
 	</main><!-- /.main-wrapper -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -70,12 +84,27 @@
 	<script src="js/demo.js"></script>
 	<script src="src/js/timeline.js" type="text/javascript"></script>
 	<script type="text/javascript">
-		$(function () {
-			
+		$(function (){			
 			$('.timeline-1').Timeline({
 				autoplay: true
 			});			
 		});
+	</script>
+	<script type="text/javascript">
+		function showInfo(tipo){
+			switch(tipo){
+				case 'med':
+					$('#info').text('Teste');
+				break; 	
+			}
+		}
+		function showInfoTwo(tipo){
+			switch(tipo){
+				case 'med':
+					$('#info').text('Teste 2');
+				break; 	
+			}
+		}
 	</script>
 </body>
 </html>
