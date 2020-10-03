@@ -21,8 +21,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #292b2c;
-  background: linear-gradient(to bottom right, #4A2AB2, #23A5E9); }
+  color: #000000;
+  }
 
 p {
   margin-bottom: 0.5rem; }
@@ -31,26 +31,6 @@ p {
   max-width: 980px;
   margin: 0 auto; }
 
-code, pre {
-  padding: 0.5rem;
-  background-color: #f6f8fa;
-  color: #4A2AB2;
-  line-height: 1.7; }
-
-pre {
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  overflow: auto; }
-
-code {
-  padding: 0.2rem;
-  margin-bottom: 0.1rem;
-  font-size: 90%;
-  background-color: #f6f8fa;
-  border-radius: .25rem; }
-  code .pln,
-  code .pun {
-    color: #4A2AB2; }
 
 .header-wrapper {
   padding: 5rem 0; }
@@ -76,7 +56,9 @@ code {
 .section-list {
   padding: 3rem 2.5rem;
   margin-bottom: 2rem;
-  background: #fff; }
+  background: #fff;
+  color:#000000;	
+  }
   @media (min-width: 576px) {
     .section-list {
       border-radius: 1rem; } }
@@ -114,12 +96,6 @@ code {
 .row-large {
   width: 50%; }
 
-.footer-wrapper {
-  padding: 1rem 0;
-  color: #fff;
-  text-align: center; }
-  .footer-wrapper a {
-    color: currentColor; }
 
 .timeline-theme-1 {
   width: 800px;
@@ -171,7 +147,9 @@ code {
   text-align: center; }
 
 .theme-1 {
-  background: #4A2AB2; }
+  background: #7dffc3;
+  color: #000000;	
+}
 
 .theme-2 {
   background: #7dffc3; }
