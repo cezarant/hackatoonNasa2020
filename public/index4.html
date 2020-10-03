@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>Hackathon SpaceApps 2020</title>	
+	<link rel="stylesheet" href="src/css/timeline.css">		
+	<link rel="stylesheet" href="css/demo.css">	
+</head>
+<body>
+	<main class="main-wrapper container">		
+		<section class="section-list">
+			<div class="container">				
+					<div class="timeline-container">
+						<div class="timeline timeline-1">							
+							<div data-time="07">
+								<div class="timeline-visual">
+									<img src="img/astronaut/1.jpg" alt="">
+								</div>
+								<div class="timeline-detail">
+									<p>Astronaut:Drew Gaffney</p> 
+									<table>
+										<tr>
+											<td>Sleep Period:</td><td>8</td>
+										</tr>
+										<tr>
+											<td>Realiza cochilos adicionais?</td><td>Não</td>
+										</tr>
+										<tr>
+											<td>Faz uso de medicamentos?</td><td>
+												<a href="#med" rel="modal:open">Details</a></td>
+										</tr>
+										<tr>
+											<td>Contramedidas</td><td><a href="#" onclick="showInfo('con')">Details</a></td>
+										</tr>
+										<tr>
+											<td>Alimentação</td><td><a href="#" onclick="showInfo('food')">Details</a></td>
+										</tr>
+										<tr>
+											<td>Exercício Fisico</td><td><a href="#" onclick="showInfo('fit')">Details</a></td>
+										</tr>
+									</table>									
+								</div>															
+							</div>
+							<div data-time="08">
+								<div class="timeline-visual">
+									<img src="img/astronaut/2.jpg" alt="">
+								</div>
+								<div class="timeline-detail">
+									<p>Astronaut:Gutierrez, Sidney M</p>
+									<table>
+										<tr>
+											<td>Sleep Period:</td><td>8</td>
+										</tr>
+										<tr>
+											<td>Realiza cochilos adicionais?</td><td>Não</td>
+										</tr>
+										<tr>
+											<td>Faz uso de medicamentos?</td><td><a href="#" onclick="showInfoTwo('med')">Details</a></td>
+										</tr>
+										<tr>
+											<td>Contramedidas</td><td><a href="#" onclick="showInfoTwo('con')">Details</a></td>
+										</tr>
+										<tr>
+											<td>Alimentação</td><td><a href="#" onclick="showInfoTwo('food')">Details</a></td>
+										</tr>
+										<tr>
+											<td>Exercício Fisico</td><td><a href="#" onclick="showInfoTwo('fit')">Details</a></td>
+										</tr>
+									</table>									
+								</div>
+							</div>							
+						</div>
+					</div><!-- /.timeline-container -->
+				</div><!-- /.section-list-box -->				
+			</div>
+		</section>		
+	</main><!-- /.main-wrapper -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />	
+	<script src="js/demo.js"></script>
+	<script src="src/js/timeline.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function (){			
+			$('.timeline-1').Timeline({
+				autoplay: false,
+				dotsPosition: 'top'
+			});			
+		});
+	</script>
+	<script type="text/javascript">
+		function showInfo(tipo){
+			switch(tipo){
+				case 'med':
+					$('#info').text('Teste');
+				break; 	
+			}
+		}
+		function showInfoTwo(tipo){
+			switch(tipo){
+				case 'med':
+					$('#info').text('Teste 2');
+				break; 	
+			}
+		}
+	</script>
+	<div id="med" class="modal">
+		<p>Thanks for clicking. That felt good.</p>
+		<a href="#" rel="modal:close">Close</a>
+    </div>
+	  
+</body>
+</html>
