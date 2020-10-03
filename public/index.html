@@ -11,47 +11,56 @@
       <div class="container">
         <div class="page-intro">
           <h1>Astronauta de Mármore</h1>
-          <h2>Tool to watch Astronauts Sleeps</h2>          
+          <h2>Tool to watch Astronauts Sleeps</h2>                    
         </div>
       </div>
     </header><!-- /.header-wrapper -->
-
-    <main class="main-wrapper container">
-      <!--<section class="section-list">
-        <div class="container">
-          <h2>Getting Started</h2>					
-          </div>        
-      </section>-->
+    <main class="main-wrapper container">      
       <section class="section-list">
         <div class="container">          
           <div class="section-list-box">            
             <div class="timeline-container">
               <div class="timeline timeline-1">                
-                <div data-time="07">
+                <div data-time="07:00">
                     <div class="timeline-visual">
                         <img src="img/astronaut/1.jpg" alt="">
                     </div>
                     <div class="timeline-detail">
-                        <p>Astronaut:Drew Gaffney</p> 
+                        <p>Astronaut:<b>Drew Gaffney</b></p> 
                         <table>
                             <tr>
-                                <td>Sleep Period:</td><td>8</td>
+                                <td>Sleep well?</td>                               
+                                <td>
+                                  <p style="color:red">Yes -<a href="#med" rel="modal:open">Details</a>
+                                  </p>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Realiza cochilos adicionais?</td><td>Não</td>
+                                <td>Additional sleep?</td><td>No</td>
                             </tr>
                             <tr>
-                                <td>Faz uso de medicamentos?</td><td>
-                                    <a href="#med" rel="modal:open">Details</a></td>
+                                <td>Especial Medications?</td>
+                                <td>
+                                  Yes -<a href="#med" rel="modal:open">Details</a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Contramedidas</td><td><a href="#" onclick="showInfo('con')">Details</a></td>
+                              <td>Counter Measure?</td>                               
+                              <td>
+                                Yes -<a href="#med" rel="modal:open">Details</a>
+                              </td>
                             </tr>
                             <tr>
-                                <td>Alimentação</td><td><a href="#" onclick="showInfo('food')">Details</a></td>
+                              <td>What Food?</td>                               
+                              <td>
+                                Yes -<a href="#med" rel="modal:open">Details</a>
+                              </td>
                             </tr>
                             <tr>
-                                <td>Exercício Fisico</td><td><a href="#" onclick="showInfo('fit')">Details</a></td>
+                                <td>Exercise Times</td>
+                                <td>
+                                Yes -<a href="#med" rel="modal:open">Details</a>
+                                </td>
                             </tr>
                         </table>									
                     </div>															
@@ -82,135 +91,13 @@
                                 <td>Exercício Fisico</td><td><a href="#" onclick="showInfoTwo('fit')">Details</a></td>
                             </tr>
                         </table>									
-                    </div>
+                    </div>                    
                 </div>							
               </div>
             </div><!-- /.timeline-container -->
           </div><!-- /.section-list-box -->
         </div>
-      </section>
-
-      <section class="section-list">
-        <div class="container">
-          <h2>Options</h2>
-          <p>Available options listed below.</p>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Name</th>
-								<th>Default</th>
-								<th>Type</th>
-                <th class="row-large">Info</th>
-              </tr>
-            </thead>
-            <tbody>
-							<tr>
-								<td>autoplay</td>
-								<td><code>false</code></td>
-								<td>
-									<code>true</code>
-									<code>false</code>
-								</td>
-								<td>Enables Autoplay.</td>
-							</tr>
-							<tr>
-								<td>autoplaySpeed</td>
-								<td><code>3000</code></td>
-								<td>
-									<code>int(ms)</code>
-								</td>
-								<td>Autoplay Speed in milliseconds</td>
-							</tr>
-							<tr>
-								<td>mode</td>
-								<td><code>'horizontal'</code></td>
-								<td>
-									<code>'horizontal'</code>
-									<code>'vertical'</code>
-								</td>
-								<td>Determines the structure of the slider.</td>
-							</tr>
-              <tr>
-                <td>itemClass</td>
-                <td><code>'timeline-item'</code></td>
-                <td>
-                  <code>'class-name'</code>
-                </td>
-                <td>Timeline item class value. Makes it easy to customize.</td>
-              </tr>
-              <tr>
-                <td>dotsClass</td>
-                <td><code>'timeline-dots'</code></td>
-                <td>
-                  <code>'class-name'</code>
-                </td>
-                <td>The container class value for timeline dates.</td>
-              </tr>
-              <tr>
-                <td>startItem</td>
-                <td><code>'first'</code></td>
-                <td>
-                  <code>'first'</code>
-                  <code>'last'</code>
-                  <code>'number'</code>
-                </td>
-                <td>It determines which content will be active at startup. Number starts at <b>0</b>.</td>
-              </tr>
-              <tr>
-                <td>dotsPosition</td>
-                <td><code>'bottom'</code></td>
-                <td>
-                  <code>'bottom'</code>
-                  <code>'top'</code>
-                </td>
-                <td>Sets the location of the timeline dates.</td>
-              </tr>
-              <tr>
-                <td>activeClass</td>
-                <td><code>'slide-active'</code></td>
-                <td>
-                  <code>'class-name'</code>
-                </td>
-                <td>Timeline items and dates active class</td>
-              </tr>
-              <tr>
-                <td>prevClass</td>
-                <td><code>'slide-prev'</code></td>
-                <td>
-                  <code>'class-name'</code>
-                </td>
-                <td>Timeline items and dates prev class</td>
-              </tr>
-              <tr>
-                <td>nextClass</td>
-                <td><code>'slide-next'</code></td>
-                <td>
-                  <code>'class-name'</code>
-                </td>
-                <td>Timeline items and dates next class</td>
-              </tr>
-							<tr>
-								<td>pauseOnHover</td>
-								<td><code>true</code></td>
-								<td>
-									<code>true</code>
-									<code>false</code>
-								</td>
-								<td>Pause Autoplay On Hover</td>
-							<tr>
-								<td>pauseOnDotsHover</td>
-								<td><code>false</code></td>
-								<td>
-									<code>true</code>
-									<code>false</code>
-								</td>
-								<td>Pause Autoplay On Hover</td>
-							</tr>
-
-            </tbody>
-          </table>
-        </div>
-      </section>
+      </section>      
     </main><!-- /.main-wrapper -->    
     <div id="med" class="modal">
 		<p>Thanks for clicking. That felt good.</p>

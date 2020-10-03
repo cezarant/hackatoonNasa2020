@@ -129,11 +129,11 @@ code {
 
 .timeline-1 .timeline-list {
   width: 800px;
-  height: 350px; }
+  height: auto; }
 
 .timeline-1 .timeline-item {
   width: 800px;
-  height: 350px;
+  height: auto;
   background: #ddd;
   border: none; }
 
