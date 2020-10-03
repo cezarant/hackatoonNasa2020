@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>First commit</title>
-    <!-- Timeline Style -->
+    <title>First commit</title>    
     <link rel="stylesheet" href="src/css/timeline.css">
-    <link rel="stylesheet" href="css/prettify.css">
-    <!-- Demo style -->
+    <link rel="stylesheet" href="css/prettify.css">    
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/demo.css">
   </head>
-  <body>    
-	<div class="section-list-box">
-		<h3>First commit</h3>						
-		<div class="timeline-container timeline-theme-2">
-			<div class="timeline timeline-small-box timeline-3">
-				<div class="theme-2" data-time="2008">1</div>
-				<div class="theme-6" data-time="2009">2</div>
-				<div class="theme-4" data-time="2010">3</div>
-				<div class="theme-1" data-time="2011">4</div>
-				<div class="theme-5" data-time="2012">5</div>
-				<div class="theme-1" data-time="2013">6</div>
-				<div class="theme-3" data-time="2014">7</div>
-				<div class="theme-4" data-time="2015">8</div>
-				<div class="theme-6" data-time="2016">9</div>
-				<div class="theme-3" data-time="2017">10</div>
+  <body>
+    <main class="main-wrapper container">
+        <section class="section-list">
+			<div class="section-list-box">
+				<h3>First Commit </h3>						
+				<div class="timeline-container timeline-theme-2">
+					<div class="timeline timeline-small-box timeline-3">
+						<div class="theme-2" data-time="2008">1</div>
+						<div class="theme-6" data-time="2009">2</div>
+						<div class="theme-4" data-time="2010">3</div>
+						<div class="theme-1" data-time="2011">4</div>
+						<div class="theme-5" data-time="2012">5</div>
+						<div class="theme-1" data-time="2013">6</div>
+						<div class="theme-3" data-time="2014">7</div>
+						<div class="theme-4" data-time="2015">8</div>
+						<div class="theme-6" data-time="2016">9</div>
+						<div class="theme-3" data-time="2017">10</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
+        </div>
+      </section>
+    </main>  
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	
 	<script async defer src="https://buttons.github.io/buttons.js"></script>
 	<script src="js/prettify.js"></script>
 	<script src="js/demo.js"></script>	
 	<script src="src/js/timeline.js" type="text/javascript"></script>
 	<script type="text/javascript">
-		$(function(){						
+		$(function(){			
 			$('.timeline-3').Timeline({
 				autoplay: true,
 				mode: 'horizontal',
