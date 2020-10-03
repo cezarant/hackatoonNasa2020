@@ -8,14 +8,8 @@ body {
   overflow-x: hidden; }
 
 html {
-  font-size: 14px; }
-  @media (min-width: 576px) {
-    html {
-      font-size: 15px; } }
-  @media (min-width: 768px) {
-    html {
-      font-size: 16px; } }
-
+  font-size: 14px; 
+}  
 body {
   font-family: "Lato",Arial,sans-serif;
   font-size: 1rem;
@@ -32,42 +26,12 @@ p {
   margin: 0 auto; }
 
 
-.header-wrapper {
-  padding: 5rem 0; }
-
-.page-intro {
-  text-align: center;
-  line-height: 1.2; }
-  .page-intro h1 {
-    display: inline-block;
-    font-weight: 300;
-    font-size: 4rem;
-    color: #7dffc3;
-    background: -webkit-linear-gradient(135deg, #fff9b0, #7dffc3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
-  .page-intro h2 {
-    font-weight: 300;
-    font-size: 1.5rem;
-    line-height: 1.7;
-    color: #fff;
-    margin-bottom: 2rem; }
-
 .section-list {
-  padding: 3rem 2.5rem;
+  padding: 4rem 2.5rem;
   margin-bottom: 2rem;
   background: #fff;
   color:#000000;	
   }
-  @media (min-width: 576px) {
-    .section-list {
-      border-radius: 1rem; } }
-  .section-list a {
-    color: #4A2AB2; }
-  .section-list h2 {
-    margin-bottom: 1.25rem;
-    font-size: 2rem;
-    color: #4A2AB2; }
 
 .section-list-box:not(:last-child) {
   border-bottom: 1px solid #dddddd;
@@ -103,11 +67,11 @@ p {
 
 .timeline-1 .timeline-list {
   width: 800px;
-  height: 350px; }
+  height: 270px; }
 
 .timeline-1 .timeline-item {
   width: 800px;
-  height: 350px;
+  height: 270px;
   background: #ddd;
   border: none; }
 
@@ -145,23 +109,3 @@ p {
   height: 250px;
   color: #fff;
   text-align: center; }
-
-.theme-1 {
-  background: #7dffc3;
-  color: #000000;	
-}
-
-.theme-2 {
-  background: #7dffc3; }
-
-.theme-3 {
-  background: #23A5E9; }
-
-.theme-4 {
-  background: #93C763; }
-
-.theme-5 {
-  background: #949923; }
-
-.theme-6 {
-  background: #990055; }
