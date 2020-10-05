@@ -31,7 +31,7 @@
                             <tr>
                                 <td>Sleep well?</td>                               
                                 <td>
-                                  <p style="color:red">Yes -<a href="#med" rel="modal:open">Details</a>
+                                  <p style="color:red">Yes -<a href="#sleep" rel="modal:open">Details</a>
                                   </p>
                                 </td>
                             </tr>
@@ -47,48 +47,64 @@
                             <tr>
                               <td>Counter Measure?</td>                               
                               <td>
-                                Yes -<a href="#med" rel="modal:open">Details</a>
+                                Yes -<a href="#cont" rel="modal:open">Details</a>
                               </td>
                             </tr>
                             <tr>
                               <td>What Food?</td>                               
                               <td>
-                                Yes -<a href="#med" rel="modal:open">Details</a>
+                                Yes -<a href="#food" rel="modal:open">Details</a>
                               </td>
                             </tr>
                             <tr>
                                 <td>Exercise Times</td>
                                 <td>
-                                Yes -<a href="#med" rel="modal:open">Details</a>
+                                Yes -<a href="#ex" rel="modal:open">Details</a>
                                 </td>
                             </tr>
                         </table>									
                     </div>															
                 </div>
-                <div data-time="08">
+                <div data-time="08:00">
                     <div class="timeline-visual">
                         <img src="img/astronaut/2.jpg" alt="">
                     </div>
                     <div class="timeline-detail">
-                        <p>Astronaut:Gutierrez, Sidney M</p>
+                        <p>Astronaut:<b>Drew Gaffney</b></p> 
                         <table>
                             <tr>
-                                <td>Sleep Period:</td><td>8</td>
+                                <td>Sleep well?</td>                               
+                                <td>
+                                  <p style="color:red">Yes -<a href="#sleep" rel="modal:open">Details</a>
+                                  </p>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Realiza cochilos adicionais?</td><td>Não</td>
+                                <td>Additional sleep?</td><td>No</td>
                             </tr>
                             <tr>
-                                <td>Faz uso de medicamentos?</td><td><a href="#" onclick="showInfoTwo('med')">Details</a></td>
+                                <td>Especial Medications?</td>
+                                <td>
+                                  Yes -<a href="#med" rel="modal:open">Details</a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Contramedidas</td><td><a href="#" onclick="showInfoTwo('con')">Details</a></td>
+                              <td>Counter Measure?</td>                               
+                              <td>
+                                Yes -<a href="#cont" rel="modal:open">Details</a>
+                              </td>
                             </tr>
                             <tr>
-                                <td>Alimentação</td><td><a href="#" onclick="showInfoTwo('food')">Details</a></td>
+                              <td>What Food?</td>                               
+                              <td>
+                                Yes -<a href="#food" rel="modal:open">Details</a>
+                              </td>
                             </tr>
                             <tr>
-                                <td>Exercício Fisico</td><td><a href="#" onclick="showInfoTwo('fit')">Details</a></td>
+                                <td>Exercise Times</td>
+                                <td>
+                                Yes -<a href="#ex" rel="modal:open">Details</a>
+                                </td>
                             </tr>
                         </table>									
                     </div>                    
@@ -100,8 +116,99 @@
       </section>      
     </main><!-- /.main-wrapper -->    
     <div id="med" class="modal">
-		<p>Thanks for clicking. That felt good.</p>
-		<a href="#" rel="modal:close">Close</a>
+        <table class="table">
+          <tr>
+            <td colspan="2">Medication</td>            
+          </tr>
+          <td>Melatonin</td>
+          <td>
+              5.0 mg one hour prior to each bedtime                            
+              Experiment: <b>NAG91035</b> <a href="https://lsda.jsc.nasa.gov/Experiment/exper/1216">Link</a>    
+          </td>
+          <tr>
+            <td>Was made?</td><td>Yes</td>
+          </tr>          
+        </table>
+		    <a href="#" rel="modal:close">Close</a>
+    </div>
+    <div id="sleep" class="modal">
+      <table class="table">
+        <tr>
+          <td colspan="2">
+             Sleep Info
+          </td>
+        </tr>
+        <tr>
+          <td>Sleep Period</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Start of Sleep</td>
+          <td>06:00</td>
+        </tr>
+        <tr>
+          <td>Wake Up</td>
+          <td>12:00</td>
+        </tr>
+        <tr>
+          <td>Naps?</td>
+          <td>15 minutes</td>
+        </tr>       
+        <tr>
+          <td>Quality of REM</td>
+          <td><p style="color: green;">Good</p> 
+               Based in <b><a href="https://lsda.jsc.nasa.gov/Experiment/exper/846">9401663</a></b> Experiment</td>
+        </tr>
+      </table>
+      <a href="#" rel="modal:close">Close</a>
+    </div>
+    <div id="food" class="modal">      
+      
+      <a href="#" rel="modal:close">Close</a>
+    </div>
+    <div id="cont" class="modal">
+      <table class="table">
+        <tr>
+          <td colspan="2">Counter Measure</td>            
+        </tr>        
+        <tr>
+          <td>bright light</td>
+          <td>6.5 hours with (~9,500) of Lux</td>
+        </tr>
+        <tr>
+           <td colspan="2">
+              Experiment: <b>NAG53952</b><a href="https://lsda.jsc.nasa.gov/Experiment/exper/1032">Link</a>    
+           </td> 
+        </tr>
+      </table> 
+      <a href="#" rel="modal:close">Close</a>
+    </div>
+    <div id="ex" class="modal">
+      <table class="table">
+        <tr>
+          <td colspan="2">Exercise</td>            
+        </tr>
+        <td>Supine LBNP</td>
+        <td>
+            40 minutes per day of              
+        </td>
+        <tr>
+           <td>
+            Static LBNP
+           </td>
+           <td>
+              5 minutes per day
+           </td>
+        <tr>
+          <td>Was made?</td><td>Yes</td>
+        </tr>          
+        <tr>
+           <td colspan="2">
+              Experiment: <b>NAG91425</b> <a href="https://lsda.jsc.nasa.gov/Experiment/exper/1032">Link</a>    
+           </td> 
+        </tr>
+      </table>
+      <a href="#" rel="modal:close">Close</a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	
     <script async defer src="https://buttons.github.io/buttons.js"></script>        
